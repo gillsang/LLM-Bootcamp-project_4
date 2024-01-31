@@ -434,7 +434,7 @@ def get_companies_df(df_api_key):
         data.append(company_data)
 
     return pd.DataFrame(data)
-df = get_companies_df("5458776f79636b7337316458424d49")
+df = get_companies_df("api")
 
 
 # 여기에 해당 분야 챗봇 관련 코드 추가
@@ -442,7 +442,7 @@ df = get_companies_df("5458776f79636b7337316458424d49")
 import re
 
 # OpenAI API 키 설정
-openai.api_key = "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"
+openai.api_key = "api"
 
 # Streamlit 세션 상태 초기화
 if "openai_model" not in st.session_state:
